@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/brdr"
+    android:orientation="vertical"
+
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp"
+    android:layout_height="wrap_content">
+<!--    android:layout_marginLeft="10dp"-->
+<!--    android:layout_marginRight="10dp"-->
+<!--    android:layout_marginTop="10dp"-->
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     >
+
+        <TextView
+            android:fontFamily="@font/aspergitbold"
+            android:id="@+id/typeofnews"
+            android:layout_width="match_parent"
+            android:text="Type Of news"
+            android:paddingLeft="5dp"
+            android:textColor="#666666"
+            android:paddingRight="5dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textSize="10dp"
+            android:singleLine="true"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/maintitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:paddingLeft="5dp"
+android:paddingRight="5dp"
+            android:text="heading of news"
+            android:maxLines="1"
+            android:fontFamily="@font/aspergitbold"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_below="@id/typeofnews"
+            android:textColor="#882C2C"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/maintitle"
+            android:layout_height="140dp">
+<androidx.cardview.widget.CardView
+    android:id="@+id/imgload2"
+    android:layout_width="wrap_content"
+    card_view:cardCornerRadius="10dp   "
+    card_view:cardElevation="4dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgload"
+            android:layout_width="160dp"
+            android:scaleType="fitXY"
+            android:layout_height="130dp" />
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+        <TextView
+            android:id="@+id/maincaption"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/imgload2"
+            android:text="Caption of news aaaaaaaaaaaaaaaaaaaaaa"
+            android:textColor="#000"
+            android:maxLines="5"
+            android:fontFamily="@font/aspergitbold"
+            android:textSize="14dp"
+            android:layout_height="wrap_content"/>
+
+
+
+
+            <TextView
+                android:id="@+id/captionsecond"
+                android:layout_width="wrap_content"
+                android:text="Time's ago"
+android:layout_alignParentBottom="true"
+                android:textColor="#666666"
+                android:paddingRight="5dp"
+                android:maxLines="1"
+                android:fontFamily="@font/aspergitbold"
+                android:textSize="10dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+</LinearLayout>

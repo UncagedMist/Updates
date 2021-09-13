@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tbc.uncagedmist.cricketupdates.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/back_bg"
+        tools:context="com.tbc.uncagedmist.cricketupdates.MainActivity">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/nestedscroller"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radiusdecresbrdr"
+                    android:padding="5dp"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/mon_reg"
+                    android:text="Live Cricket" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <RelativeLayout
+                    android:id="@+id/liveline"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_bg"
+                    android:layout_height="50dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/mon_reg"
+                        android:text="Ongoing Match"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/loutAllSeries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="@color/gray" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radiusdecresbrdr"
+                        android:padding="5dp"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/mon_reg"
+                        android:text="All Series" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="@color/gray" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="100dp">
+
+                        <ProgressBar
+                            android:id="@+id/prbarSeries"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rcSeriesList"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            android:paddingLeft="5dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="false">
+
+                    <FrameLayout
+                        android:id="@+id/gooogleadViewNative"
+                        android:layout_width="match_parent"
+                        android:layout_height="305dp"
+                        android:background="@drawable/adborder"
+                        android:padding="3dp"
+                        android:visibility="gone" />
+
+                    <com.facebook.ads.NativeAdLayout
+                        android:id="@+id/fbnative_ad_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/adborder"
+                        android:orientation="vertical"
+                        android:padding="3dp"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/gray" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radiusdecresbrdr"
+                        android:padding="5dp"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/mon_reg"
+                        android:text="Latest News" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="@color/gray" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcNewsList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible" />
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/newsloaderjsoup"/>
+                    <RelativeLayout
+                        android:id="@+id/progressbarmain"
+
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="50dp">
+
+                        <ProgressBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"/>
+
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <ImageView
+            android:id="@+id/top"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/top"
+            android:backgroundTint="#009688"
+            android:layout_margin="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

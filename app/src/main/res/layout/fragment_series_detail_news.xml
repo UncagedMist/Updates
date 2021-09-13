@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/topheading"
+        android:layout_width="match_parent"
+        android:background="@drawable/back_bg"
+        android:layout_height="54dp">
+
+        <TextView
+            android:id="@+id/titleprevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Series Detail"
+            android:textColor="#fff"
+            android:fontFamily="@font/mon_reg"
+            android:textSize="22dp"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+    android:id="@+id/nestedscroller"
+        android:layout_below="@id/topheading"
+    android:layout_width="match_parent"
+        android:layout_above="@id/adrelative"
+        android:background="@drawable/back_bg"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:elevation="5dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcSeriesDetailList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_centerInParent="true"
+            android:id="@+id/newsloaderjsoup"/>
+
+</RelativeLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/adrelative"
+        android:layout_width="match_parent"
+        android:layout_margin="4dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:background="@drawable/adborder">
+        <FrameLayout
+            android:id="@+id/adViewAdaptiveBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:gravity="center"
+            android:visibility="gone" />
+        <com.facebook.ads.NativeAdLayout
+            android:id="@+id/fbnative_banner_ad_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:visibility="gone" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutNoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/todo"
+            android:tint="#851515"
+            android:src="@drawable/icon_nodat"/>
+
+        <TextView
+            android:id="@+id/txtNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#851515"
+            android:text="Opps! Data Not Found."
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

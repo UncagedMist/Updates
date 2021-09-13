@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Cricket Line</string>
+    <string name="todo">Todo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_rate">Rate us</string>
+    <string name="nav_share">Share</string>
+    <string name="nav_feedback">Feedback</string>
+    <string name="nav_policy">Privacy Policy</string>
+
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    <string name="app_base_uid">ca-app-pub-7920815986886474~7483149133</string>
+    <string name="fan_app_id">405472820995372</string>
+
+    <string name="admob_app_open">ca-app-pub-7920815986886474/2777617364</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CD000000</color>
+    <color name="colorPrimaryDark">#CD000000</color>
+    <color name="colorAccent">#4f91CD</color>
+    <color name="colorContra">#003D35</color>
+    <!--    62277E-->
+    <color name="text_color">#FFFFFF</color>
+    <color name="color_txt_light">#474747</color>
+    <color name="ad_back_color">#646464</color>
+    <color name="white">#ffffff</color>
+    <color name="ad_text_color">#FFFFFF</color>
+    <color name="light_transparent_color">#c2000000</color>
+    <color name="black">#000000</color>
+    <color name="textcolor_team1">#5E5B5B</color>
+    <color name="textcolor_team2">#212121</color>
+    <color name="textcolor_status">#0074b1</color>
+    <color name="textcolor_title">#757575</color>
+    <color name="textColorGrayDark">#ff636363</color>
+    <color name="green">#1c7c42</color>
+
+    <color name="gray">#dfdfdf</color>
+    <color name="bg">#ecf0f1</color>
+    <color name="gray_slider">#f0f0f0</color>
+    <color name="dividercolor">#BDBDBD</color>
+    <color name="blue">#ff0575c3</color>
+
+    <color name="card_color">#120832</color>
+    <color name="overlayBackgroundMenu">#7f004487</color>
+
+</resources>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tbc.uncagedmist.cricketupdates.activity.SeriesOptionActivity">
+
+    <RelativeLayout
+        android:id="@+id/topheading"
+        android:layout_width="match_parent"
+        android:background="@drawable/back_bg"
+        android:layout_height="54dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/mon_reg"
+            android:text="Series Detail"
+            android:textColor="#fff"
+            android:textSize="22dp"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_bg"
+        android:layout_below="@+id/topheading">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/matches"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/card_color"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:text="Matches"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/mon_reg" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/news"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/card_color"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:layout_centerVertical="true"                    android:fontFamily="@font/mon_reg"
+                    android:text="News"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/teams"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/card_color"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:layout_centerVertical="true"                    android:fontFamily="@font/mon_reg"
+                    android:text="Teams"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/points"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/card_color"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:layout_centerVertical="true"                    android:fontFamily="@font/mon_reg"
+                    android:text="Points"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/gallary"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/card_color"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:layout_centerVertical="true"                    android:fontFamily="@font/mon_reg"
+                    android:text="Gallery"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/venue"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/card_color"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:layout_centerVertical="true"                    android:fontFamily="@font/mon_reg"
+                    android:text="Venue"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:id="@+id/ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:focusableInTouchMode="false">
+
+                <FrameLayout
+                    android:id="@+id/gooogleadViewNative"
+                    android:layout_width="match_parent"
+                    android:layout_height="305dp"
+                    android:background="@drawable/adborder"
+                    android:padding="3dp"
+                    android:visibility="gone" />
+
+                <com.facebook.ads.NativeAdLayout
+                    android:id="@+id/fbnative_ad_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/adborder"
+                    android:orientation="vertical"
+                    android:padding="3dp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

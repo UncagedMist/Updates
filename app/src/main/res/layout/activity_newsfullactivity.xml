@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tbc.uncagedmist.cricketupdates.activity.newsfullactivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/back"
+        app:tint="@color/card_color" />
+
+    <ProgressBar
+        android:id="@+id/textloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <com.github.florent37.diagonallayout.DiagonalLayout
+        android:id="@+id/diagonalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:diagonal_angle="5"
+        app:diagonal_direction="left"
+        app:diagonal_position="bottom">
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/imagenews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:background="#A0333639"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/headingmain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/mon_reg"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.github.florent37.diagonallayout.DiagonalLayout>
+
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/scrolltextcaption"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/diagonalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/textcaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mon_reg"
+            android:textColor="@color/card_color"
+            android:textSize="18sp"/>
+
+    </ScrollView>
+
+</RelativeLayout>
